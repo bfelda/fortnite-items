@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
 
-  private heros: any;
+  public heros: any;
 
   constructor(private http:HttpClient) {
     this.GetOverwatchHeros().toPromise().then((heros => this.heros = heros));
